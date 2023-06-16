@@ -1,6 +1,19 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
+export const findSuitableRooms = /* GraphQL */ `
+  query FindSuitableRooms(
+    $max_tickets: Int
+    $start_datetime: AWSDateTime
+    $end_datetime: AWSDateTime
+  ) {
+    findSuitableRooms(
+      max_tickets: $max_tickets
+      start_datetime: $start_datetime
+      end_datetime: $end_datetime
+    )
+  }
+`;
 export const getRoom = /* GraphQL */ `
   query GetRoom($id: ID!) {
     getRoom(id: $id) {

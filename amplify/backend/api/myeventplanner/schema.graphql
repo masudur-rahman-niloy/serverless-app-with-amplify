@@ -32,3 +32,8 @@ type Event @model
   total_tickets: Int!
   tickets: [Ticket!]
 }
+
+type Query {
+    findSuitableRooms(max_tickets: Int, start_datetime: AWSDateTime, end_datetime: AWSDateTime): String @function(name:"FindSuitableRooms-${env}")
+}
+

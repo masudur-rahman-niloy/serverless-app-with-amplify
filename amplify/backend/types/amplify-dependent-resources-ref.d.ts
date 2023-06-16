@@ -19,6 +19,15 @@ export type AmplifyDependentResourcesAttributes = {
       "adminsGroupRole": "string"
     }
   },
+  "function": {
+    "FindSuitableRooms": {
+      "Arn": "string",
+      "LambdaExecutionRole": "string",
+      "LambdaExecutionRoleArn": "string",
+      "Name": "string",
+      "Region": "string"
+    }
+  },
   "storage": {
     "EventImages": {
       "BucketName": "string",

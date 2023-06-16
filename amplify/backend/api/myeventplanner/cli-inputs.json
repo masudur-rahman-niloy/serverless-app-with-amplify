@@ -8,6 +8,10 @@
       "cognitoUserPoolId": "authmyeventplannerAuth"
     },
     "conflictResolution": {},
-    "additionalAuthTypes": []
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      }
+    ]
   }
 }

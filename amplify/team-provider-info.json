@@ -21,6 +21,12 @@
       },
       "storage": {
         "EventImages": {}
+      },
+      "function": {
+        "FindSuitableRooms": {
+          "deploymentBucketName": "amplify-myeventplanner-dev-181818-deployment",
+          "s3Key": "amplify-builds/FindSuitableRooms-4a6c3050586c70385571-build.zip"
+        }
       }
     }
   }
