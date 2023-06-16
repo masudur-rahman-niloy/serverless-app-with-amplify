@@ -9,7 +9,9 @@
     "lint": "eslint . --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@aws-amplify/ui-vue": "^3.1.18",
     "@mdi/font": "7.0.96",
+    "aws-amplify": "^5.2.7",
     "core-js": "^3.29.0",
     "roboto-fontface": "*",
     "vue": "^3.2.0",
