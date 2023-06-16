@@ -1,7 +1,7 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 // Adding Amplify Auth
-import { Auth } from "aws-amplify";
+import { Auth, Hub } from "aws-amplify";
 
 const routes = [
   {
@@ -26,6 +26,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+});
+
+// Amplify supplies a Hub that listens for events, we are interested in sign-in and sign-out events
+Hub.listen("auth", async (data) => {
+  if (data.payload.event === 'signOut'){
+      router.push({path: '/signin'});
+  } else if (data.payload.event === 'signIn') {
+      router.push({path: '/'});
+  }
 });
 
 // Adding method to chech if user is authenticated before moving navigating to the requested page
